@@ -1,0 +1,29 @@
+<h3>Nuevo hospital</h3>
+<form #form="ngForm">
+    <div class="form-field">
+        <label>ID:</label>
+        <input type="number" #cajaid name="cajaid"/>
+    </div>
+    <div class="form-field">
+        <label>Nombre:</label>
+        <input type="text" #cajanombre name="cajanombre"/>
+    </div>
+    <div class="form-field">
+        <label>Dirección:</label>
+        <input type="text" #cajadireccion name="cajadireccion"/>
+    </div>
+    <div class="form-field">
+        <label>Teléfono:</label>
+        <input type="text" #cajatelefono name="cajatelefono"/>
+    </div>
+    <div class="form-field">
+        <label>Camas:</label>
+        <input type="number" #cajacamas name="cajacamas"/>
+    </div>
+    <button (click)="insertarHospital()">
+        Insertar
+    </button>
+</form>
+<h2 style="color: blue;">
+    {{mensaje}}
+</h2>

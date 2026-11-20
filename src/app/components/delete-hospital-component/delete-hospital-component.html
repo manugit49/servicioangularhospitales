@@ -1,9 +1,11 @@
 <h1 style="color: blue;">
     {{mensaje}}
 </h1>
-<h2 style="color: red;">
-    ¿Desea eliminar el departamento {{idhospital}}?
-</h2>
+@if(mensaje){
+    <h2 style="color: red;">
+        ¿Desea eliminar el departamento {{idhospital}}?
+    </h2>
+}
 <button class="btn btn-warning" (click)="eliminarHospital()">
     Eliminar
 </button>

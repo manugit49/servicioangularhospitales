@@ -22,7 +22,7 @@ export class ServiceHospitales {
     }
 
     async deleteHospitalAsync(id: number): Promise<any> {
-        let request = "api/hospitales" + id;
+        let request = "api/hospitales/" + id;
         let url = environment.apiejemplos + request;
         console.log(url);
         return firstValueFrom(
